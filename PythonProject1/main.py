@@ -13,8 +13,8 @@ DOT_RADIUS = 2
 NUM_ROWS = 15
 DOTS_PER_ROW = 80
 AMPLITUDE = 40
-FREQUENCY = 0.008  # Reduced from 0.02 (slower wave formation)
-PHASE_SHIFT = 0.03  # Reduced from 0.1 (slower wave movement)
+FREQUENCY = 0.008
+PHASE_SHIFT = 0.03
 TRAIL_ALPHA = 25
 MOUSE_INFLUENCE_RADIUS = 150
 MOUSE_INFLUENCE_RADIUS_SQ = MOUSE_INFLUENCE_RADIUS ** 2
@@ -31,7 +31,6 @@ clock = pygame.time.Clock()
 # Trail surface
 trail_surface = pygame.Surface((WIDTH, HEIGHT))
 trail_surface.set_alpha(TRAIL_ALPHA)
-
 
 class WaveRow:
     def __init__(self, y_pos, phase_offset):
